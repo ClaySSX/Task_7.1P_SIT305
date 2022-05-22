@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Test</string>
     <string name="title_activity_maps">Map</string>
+    <string name="Places_API">AIzaSyDWXEW9Fs3cvpWe78BCay0ofHBFguRGPs8</string>
 </resources>
