@@ -128,9 +128,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     public void removeAdvert(int addId) {
 
-        SQLiteDatabase sqldb = this.getWritableDatabase();
-        sqldb.execSQL("DELETE FROM " + Util.TABLE_NAME+ " WHERE "+ Util.AD_ID + "='" + addId+ "'");
-        sqldb.close();
+        SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
+        sqLiteDatabase.execSQL("DELETE FROM " + Util.TABLE_NAME+ " WHERE "+ Util.AD_ID + "='" + addId+ "'");
+        sqLiteDatabase.close();
 
     }
 }

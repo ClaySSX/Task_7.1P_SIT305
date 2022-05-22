@@ -13,6 +13,8 @@ import com.example.test.data.DatabaseHelper;
 import com.example.test.model.itemAdvertised;
 
 public class createAdvertActivity extends AppCompatActivity {
+
+
     DatabaseHelper db;
 
     EditText usersName;

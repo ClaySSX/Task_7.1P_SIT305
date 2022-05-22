@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
 
     Button showAdverts;
     Button createAdvert;
+    Button showMap;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
         createAdvert = findViewById(R.id.createAdvertButton);
         showAdverts = findViewById(R.id.showAdvertsButton);
+        showMap = findViewById(R.id.showMapsButton);
 
         createAdvert.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -36,6 +38,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent showAdsIntent = new Intent(MainActivity.this, showAllAdvertsActivity.class);
                 startActivity(showAdsIntent);
+            }
+        });
+
+        showMap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent showMapIntent = new Intent(MainActivity.this, MapsActivity.class);
+                startActivity(showMapIntent);
             }
         });
     }
